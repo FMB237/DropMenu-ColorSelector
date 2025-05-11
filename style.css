@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    display: flex;
+    background-color:rgb(255, 43, 43);
+    font-family: sans-serif;
+    transition: 0.5s all ease-in-out;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+h1{
+   font-size: 20rem;
+  color: hsl(1, 5%, 10%);
+  opacity: 0.5;
+  position: relative;
+  transition: 1s all ease-in-out;
+}
+
+#Selection{
+    width: 15rem;
+    outline: none;
+    height: 1.5em;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+   position: absolute;
+}
+@media(max-width:991px){
+    h1{
+        font-size: 18rem;
+    }
+    #Selection{
+        width: 13rem;
+        height: 1.8rem;
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:768px){
+    h1{
+        font-size: 15rem;
+    }
+    #Selection{
+        width: 11rem;
+        height: 1.8rem;
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:556px){
+    h1{
+        font-size: 12rem;
+    }
+    #Selection{
+        width: 9rem;
+        height: 1.5rem;
+        font-size: 1.0rem;
+    }
+}
+@media(max-width:375px){
+    h1{
+        font-size: 7rem;
+    }
+    #Selection{
+        width: 7rem;
+        height: 1.3rem;
+        font-size: 1rem;
+    }
+}
